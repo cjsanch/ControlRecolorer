@@ -61,7 +61,7 @@ class ControlColorerWidget(MayaWidget):
     def setColorOverrideBtnClicked(self):
         selection = mc.ls(selection=True, ufe=True)
         if not selection: #if there are no objects selected, raise a warning to the user 
-            self.raiseSelectionWarning()
+            self.raiseSelectionWarning() #calls the selection warning function
             return
         
         if not self.colorSelected: #if no color has been selected, raise a warning to the user
