@@ -65,7 +65,7 @@ class ControlColorerWidget(MayaWidget):
             return
         
         if not self.colorSelected: #if no color has been selected, raise a warning to the user
-            self.raiseColorWarning()
+            self.raiseColorWarning() #calls the color warning function
             return
         
         self.colorer.SetColorOverride() #calls the function to apply the color override to the selected objects
